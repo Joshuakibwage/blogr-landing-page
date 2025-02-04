@@ -1,0 +1,31 @@
+
+
+@import "tailwindcss";
+ 
+@font-face {
+  font-family: "Overpass", "Ubuntu";
+  src: url("./assets/Overpass,Ubuntu");
+} 
+ 
+body {
+  font-family: "Overpass", "Ubuntu";
+}
+
+:root {
+  --color-primary-red: hsl(356, 100%, 66%);
+  --color-red-hover: hsl(355, 100%, 74%);
+  --color-primary-blue: hsl(208, 49%, 24%);
+
+  --color-neutral-white: hsl(0, 0%, 100%);
+  --color-Grayish-blue: hsl(240, 2%, 79%);
+  --color-dark-grayish-blue: hsl(207, 13%, 34%);
+  --color-dark-black-blue: hsl(240, 10%, 16%);
+
+  /* gradients */
+
+  --color-very-light-red: hsl(13, 100%, 72%);
+  --color-Light-red: hsl(353, 100%, 62%);
+
+  --color-Very-dark-blue: hsl(237, 17%, 21%);
+  --color-dark-de-saturated-blue: hsl(237, 23%, 32%);
+}
