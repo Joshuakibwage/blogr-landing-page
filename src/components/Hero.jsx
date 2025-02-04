@@ -12,7 +12,7 @@ const Hero = () => {
             <img 
                 src="src/assets/images/bg-pattern-intro-desktop.svg" 
                 alt="Desktop background" 
-                className="w-full h-[500px] object-center object-cover opacity-40 text-red-800 rounded-bl-full"
+                className="w-full h-[500px] object-center object-cover opacity-40 text-red-800 rounded-bl-4xl"
             />
             <div className="inset-0 w-[80%] mx-auto absolute flex flex-col justify-center items-center md:mt-12">
                 <h1 className="font-extrabold text-3xl md:text-4xl lg:text-5xl text-white">A Modern Publishing Platform</h1>

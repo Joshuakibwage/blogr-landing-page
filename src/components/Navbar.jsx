@@ -3,7 +3,6 @@ import Button from "./Button";
 import { useState } from "react";
 import hamburger from "../assets/images/icon-hamburger.svg";
 import close from "../assets/images/icon-close.svg";
-import { NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -13,12 +12,6 @@ const Navbar = () => {
     const toggleNav = () => {
         setNav(!nav);
     };
-    // Function that underlines active links
-    const navLinkStyles = ({isActive}) => {
-        return {
-            textDecoration: isActive ? 'underline' : 'none'
-        };
-    }
    
 
   return (
@@ -30,15 +23,15 @@ const Navbar = () => {
 
                 <ul className="hidden ml-12 gap-6 text-white md:flex">
                     <div className="flex items-center">
-                        <NavLink style={navLinkStyles} to='/'>Product</NavLink>
+                        <a href="/">Product</a>
                         <IoChevronDown className="ml-1" />
                     </div>
                     <div className="flex items-center">
-                        <NavLink style={navLinkStyles} to=''>Company</NavLink>
+                        <a href="/">Company</a>
                         <IoChevronDown className="ml-1" />
                     </div>
                     <div className="flex items-center">
-                        <NavLink style={navLinkStyles} to=''>Connect</NavLink>
+                        <a href="/">Connect</a>
                         <IoChevronDown className="ml-1" />
                     </div>
                 
@@ -59,11 +52,11 @@ const Navbar = () => {
 
             </div>
                 {/* Hamburger menu and close menu for mobile navigation */}
-            <div onClick={toggleNav} className="md:hidden">
+            <button onClick={toggleNav} className="md:hidden cursor-pointer">
                 {nav ? 
                 (<img src={close} /> ) 
                 : (<img src={hamburger} />)}
-            </div>
+            </button>
         </div>
 
         {/* Mobile menu links */}
@@ -72,17 +65,17 @@ const Navbar = () => {
                 nav ? (
                     <ul className="flex flex-col gap-6 text-black md:hidden bg-[var(--color-neutral-white)]
                     w-[80%] h-[500px] mx-auto rounded-lg items-center mt-4 transition-transform duration-200 delay-300 
-                    ease-in-out">
+                    ease-in-out shadow-2xl">
                         <div className="flex items-center mt-12">
-                            <NavLink  to='/'>Product</NavLink>
+                            <a>Product</a>
                             <IoChevronDown className="ml-1 text-red-400" />
                         </div>
                         <div className="flex items-center">
-                            <NavLink  to=''>Company</NavLink>
+                            <a>Company</a>
                             <IoChevronDown className="ml-1 text-red-400" />
                         </div>
                         <div className="flex items-center">
-                            <NavLink  to=''>Connect</NavLink>
+                            <a>Connect</a>
                             <IoChevronDown className="ml-1 text-red-400" />
                         </div>
                         <div className="space-y-4 flex flex-col md:hidden">
