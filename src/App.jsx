@@ -1,5 +1,6 @@
 // import Company from "./pages/Company";
 // import Connect from "./pages/Connect";
+import Footer from "./components/Footer";
 import Company from "./pages/Company";
 import Connect from "./pages/Connect";
 import Design from "./pages/Design";
@@ -14,6 +15,7 @@ import Landing from "./pages/Landing"
         <Design />
         <Connect />
         <Company />
+        <Footer />
       </main>
    )
  }
