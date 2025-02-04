@@ -37,7 +37,7 @@ const Design = () => {
                      </p>
                 </div>
             </div>
-            <div className="w-full md:ml-4 md:w-1/2 ">
+            <div className="w-full md:ml md:w-1/2 ">
          
                 <img 
                     src="src/assets/images/illustration-editor-desktop.svg" 

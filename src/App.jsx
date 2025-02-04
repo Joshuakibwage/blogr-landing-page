@@ -1,5 +1,6 @@
 // import Company from "./pages/Company";
 // import Connect from "./pages/Connect";
+import Company from "./pages/Company";
 import Connect from "./pages/Connect";
 import Design from "./pages/Design";
 import Landing from "./pages/Landing"
@@ -12,6 +13,7 @@ import Landing from "./pages/Landing"
         <Landing />
         <Design />
         <Connect />
+        <Company />
       </main>
    )
  }
